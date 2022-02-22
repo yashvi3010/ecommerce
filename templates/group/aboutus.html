@@ -1,11 +1,12 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about Us</title>
-</head>
-<body>
-    <h1>About Us </h1>
-</body>
-</html>
+<h1>
+    {% if isActive %}
+        <h1>Is active is True</h1>
+        {% else %}
+        <h1>Is active is False</h1>
+    {% endif %}   
+    {% if age > 18 %}
+        <p> User is eligible </p>
+        {% else %}
+        <p> User is not eligible </p>
+    {% endif %} 
+</h1>
